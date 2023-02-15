@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from '../componets/Layout'
 
 const imageDisp = () => {
   return (
-    <div>imageDisp</div>
+    <Layout>
+      <h1>Gastbyで画像を表示させてみる。</h1>
+    </Layout>
   )
 }
 
