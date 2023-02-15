@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { css } from "@emotion/react";
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+  return <div css={footer}>Footer</div>;
+};
 
-export default Footer
+const footer = css`
+  padding-top: 30px;
+  border-top: 2px solid #ccc;
+  position: sticky;
+  top: 100vh;
+  width: 100%;
+`;
+export default Footer;
