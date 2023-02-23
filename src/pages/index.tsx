@@ -6,9 +6,7 @@ import Layout from "../componets/Layout"
 const IndexPage: React.FC<PageProps> = () => {
   return (
     <Layout>
-      <main>
-        
-      </main>
+       <h1>このサイトはGatsbyをいろいろ試すサイト</h1>
     </Layout>
   )
 }

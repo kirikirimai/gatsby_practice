@@ -1,22 +1,40 @@
-import React from 'react'
-import Footer from './Footer'
-import Header from './Header'
-import {css} from "@emotion/react";
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
+import { css, Global } from "@emotion/react";
 
-const Layout = ({children}:{children:React.ReactNode}) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div css={wrapper}>
-    <Header/>
-        {children}
-    <Footer/>
-    </div>
-  )
-}
+    <>
+      {/* <Global styles={globalBody} /> */}
 
-const wrapper=css`
-width: 100%;
-max-width: 980px;
-margin: auto;
-`
+      <div css={wrapper}>
+        <Header />
+        <main >
+          {children}
+        </main>
+        <Footer />
+      </div>
+    </>
+  );
+};
 
-export default Layout
+const globalBody = css`
+  html{
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    height: 100%;
+  }
+`;
+
+const wrapper = css`
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  height: 100%;
+`;
+
+
+export default Layout;

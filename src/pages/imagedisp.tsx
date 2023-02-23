@@ -1,8 +1,9 @@
 import React from 'react'
 import Layout from '../componets/Layout'
-import {css} from "@emotion/react";
 
+import {css} from "@emotion/react";
 import imgGatsby1 from "../images/img_gatsby1.jpg"
+
 
 const imageDisp = () => {
   return (
